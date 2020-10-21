@@ -21,10 +21,10 @@
                 // background-color: var(--bs-white);
                 // background-color: $color-main;
                 z-index: 1000;
-                box-shadow: inset 3px 3px 6px #f7f5f5,
-                            inset -3px -3px 7px #bfb7b7, 
-                            3px 3px 5px #efefef, 
-                            -3px -3px 5px #c3b0b0e3;
+                box-shadow: inset 3px 3px 6px #ffffff, 
+                            inset -3px -3px 7px #ccc9c9, 
+                            3px 3px 5px #ffffff, 
+                            -3px -3px 5px #8a858594;
                 // border: 1px solid rgba(black, 0.05);
             }
 
@@ -73,10 +73,10 @@
                     border-radius: 50%;
                     box-shadow:  4px 4px 7px #b1acac,
                                 -4px -4px 7px #fdfafa;
-                    box-shadow: inset 3px 3px 6px #f7f5f5,
-                                inset -3px -3px 7px #bfb7b7, 
-                                3px 3px 5px #efefef, 
-                                -3px -3px 5px #c3b0b0e3;
+                    box-shadow: inset 3px 3px 5px #ffffff, 
+                                inset -3px -3px 5px #ccc9c9, 
+                                3px 3px 5px #ffffff, 
+                                -3px -3px 5px #8a858594;
                     font-size: 1.8rem;
                     color: $color-dark;
                     font-size: 1.5rem;
