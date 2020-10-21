@@ -48,7 +48,8 @@
             h1 {
                 span {
                     &:first-of-type {
-                        font-size: 1.8rem;
+                        font-size: 1.5rem;
+                        color: $color-main;
                     }
                 }
                 font-size: 2.5rem;
@@ -73,6 +74,7 @@
                     &:hover {
                         box-shadow: inset  4px 4px 7px #b1acac,
                                 inset -4px -4px 7px #fdfafa;
+                        color: $color-main;
                     }
                 }
             }
