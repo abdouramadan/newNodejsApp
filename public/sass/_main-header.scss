@@ -1,0 +1,81 @@
+/* MAIN HEADER */
+.main-header {
+    background-color: $color-light;
+    height: 100vh;
+
+    .main-navbar {
+        // background-image: linear-gradient(to right, #2070e6, #3079b7);
+        background-color: $color-light;
+        border-bottom: 1px solid rgba(black, 0.1);
+
+        .container {
+            height: 70px;
+
+            .navbar-brand {
+                // color: var(--bs-dark);
+                color: $color-white;
+                color: #56595d;
+                width: 120px;
+                height: 50px;
+                border-radius: 30px;
+                // background-color: var(--bs-white);
+                // background-color: $color-main;
+                z-index: 1000;
+                box-shadow: 3px 3px 3px #b1acac, -3px -3px 3px #fdfafa;
+                box-shadow:  4px 4px 7px #b1acac,
+                                -4px -4px 7px #fdfafa;
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 0.9rem;
+                    .nav-link {
+                        color: var(--bs-white);
+                        color: #56595d;
+                        // font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        height: calc(100vh - 71px);
+
+        .bannerText {
+            width: 70%;
+
+            h1 {
+                span {
+                    &:first-of-type {
+                        font-size: 1.8rem;
+                    }
+                }
+                font-size: 2.5rem;
+            }
+
+            p {
+                line-height: 1.8;
+                color: $color-dark;
+            }
+
+            .socailLinks {
+                .link {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    box-shadow:  4px 4px 7px #b1acac,
+                                -4px -4px 7px #fdfafa;
+                    font-size: 1.8rem;
+                    color: $color-dark;
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        box-shadow: inset  4px 4px 7px #b1acac,
+                                inset -4px -4px 7px #fdfafa;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+extends ../layout/layout.pug
+block title
+    title.text-capitalize abdev
+block content
+
+    //- main header
+    header.main-header
+        nav.main-navbar.navbar.navbar-expand-lg.p-0.m-0
+            .container
+                a(href="").navbar-brand.text-uppercase.d-flex.align-items-center.justify-content-center abdev
+                ul.navbar-nav                                                                                                                                                                                                                         
+                    li.nav-item
+                        a.nav-link(href="").text-capitalize home
+                    li.nav-item
+                        a.nav-link(href="").text-capitalize about me
+                    li.nav-item
+                        a.nav-link(href="").text-capitalize portfolio
+                    li.nav-item
+                        a.nav-link(href="").text-capitalize blog
+                    li.nav-item
+                        a.nav-link(href="").text-capitalize.d-flex.align-items-center.justify-content-center contact me
+    
+        //- banner
+        .banner
+            .container.h-100.d-flex.align-items-center
+                .bannerText
+                    h1.p-0.m-0.d-flex.flex-column.text-uppercase.font-weight-bold
+                        span.mb-2 welcome!
+                        span i am ui/ux designer and developer
+                    p.mt-2.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Sequi sit illum neque? Iusto accusantium maiores placeat architecto, 
+                        possimus quod veritatis rem ea officia harum, quasi alias quo assumenda consequuntur.
+                    
+                    .socailLinks.d-flex.align-items-center.mt-4
+                        a.link(href="").d-flex.align-items-center.justify-content-center.text-decoration-none
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        a.link(href="").ml-3.d-flex.align-items-center.justify-content-center.text-decoration-none
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        a.link(href="").ml-3.d-flex.align-items-center.justify-content-center.text-decoration-none
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        a.link(href="").ml-3.d-flex.align-items-center.justify-content-center.text-decoration-none
+                            <ion-icon name="logo-google"></ion-icon>
