@@ -17,12 +17,16 @@ block content
                         a.nav-link(href="").text-capitalize portfolio
                     li.nav-item
                         a.nav-link(href="").text-capitalize blog
-                    li.nav-item
-                        a.nav-link(href="/login").text-capitalize login
-                    li.nav-item
-                        a.nav-link(href="/signup").text-capitalize signup
-                    li.nav-item
-                        a.nav-link(href="/logout").text-capitalize logout
+                    if !user
+                        li.nav-item
+                            a.nav-link(href="/google").text-capitalize login
+                        li.nav-item
+                            a.nav-link(href="/google").text-capitalize signup
+                    if user
+                        li.nav-item
+                            a.nav-link(href="/profile").text-capitalize profile
+                        li.nav-item
+                            a.nav-link(href="/logout").text-capitalize logout
                     li.nav-item
                         a.nav-link(href="").text-capitalize.d-flex.align-items-center.justify-content-center contact me
     

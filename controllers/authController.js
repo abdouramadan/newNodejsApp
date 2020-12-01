@@ -1,3 +1,5 @@
+const passport          =   require('passport')
+
 /*
  * @Login route
  * @Route /login
@@ -19,21 +21,24 @@ module.exports.signup = (req, res) =>
 }
 
 /*
+ * @Profile route
+ * @Route /profile
+ * @Method <GET>
+ */
+module.exports.profile = (req, res) =>
+{
+    const user = req.user
+    res.render('auth/profile', {user})
+}
+
+/*
  * @Logout route
  * @Route /logout
  * @Method <GET>
  */
 module.exports.logout = (req, res) =>
 {
-    res.send('logout')
-}
-
-/*
- * @Google route
- * @Route /google
- * @Method <GET>
- */
-module.exports.google = (req, res) =>
-{
-    res.send('Google auth')
+    // handle with passport
+    req.logout()
+    res.redirect('/')
 }
