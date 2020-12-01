@@ -7,7 +7,7 @@ block content
     header.main-header
         nav.main-navbar.navbar.navbar-expand-lg.p-0.m-0
             .container
-                a(href="").navbar-brand.text-uppercase.d-flex.align-items-center.justify-content-center abdev
+                a(href="").navbar-brand.text-uppercase.d-flex.align-items-center.justify-content-center fisal
                 ul.navbar-nav                                                                                                                                                                                                                         
                     li.nav-item
                         a.nav-link(href="").text-capitalize home
@@ -18,11 +18,17 @@ block content
                     li.nav-item
                         a.nav-link(href="").text-capitalize blog
                     li.nav-item
+                        a.nav-link(href="/login").text-capitalize login
+                    li.nav-item
+                        a.nav-link(href="/signup").text-capitalize signup
+                    li.nav-item
+                        a.nav-link(href="/logout").text-capitalize logout
+                    li.nav-item
                         a.nav-link(href="").text-capitalize.d-flex.align-items-center.justify-content-center contact me
     
         //- banner
         .banner
-            .container.h-100.d-flex.align-items-center
+            .container.h-100.d-flex.align-items-center.justify-content-between
                 .bannerText
                     h1.p-0.m-0.d-flex.flex-column.text-uppercase.font-weight-bold
                         span.mb-3 welcome!
@@ -41,3 +47,25 @@ block content
                             <ion-icon name="logo-instagram"></ion-icon>
                         a.link(href="").ml-3.d-flex.align-items-center.justify-content-center.text-decoration-none
                             <ion-icon name="logo-google"></ion-icon>
+                .bannerImg.p-0.p-4.d-flex.align-items-center.justify-content-center
+                    img(src="http://abdoudev.tk/done-one/img/six-me3.jpg", alt="my photo").w-100.h-100.p-0.m-0
+
+
+    //- About me
+    section.about-me.p-5
+        .container.d-flex.align-items-center.justify-content-between.flex-wrap
+
+            //- About Image
+            .aboutImg.p-4
+                img(src="http://abdoudev.tk/done-one/img/six-me3.jpg", alt="my photo")
+
+            //- About Text
+            .aboutText.pl-5
+                h3.text-capitalize.mb-4 about me
+                h2.text-capitalize hello i am labib fisal, i design and develope modern websites
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis culpa delectus impedit mollitia nesciunt odit, praesentium rem sapiente voluptate.
+
+                //- Links
+                a.downloadCv(href="").text-capitalize.d-flex.align-items-center.justify-content-center.mt-4.text-decoration-none
+                    span.mr-2.d-flex.align-items-center.justify-content-center: <ion-icon name="cloud-download-outline"></ion-icon>
+                    span download cv
