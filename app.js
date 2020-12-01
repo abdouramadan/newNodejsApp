@@ -6,7 +6,7 @@ const PORT           = process.env.PORT
 const googleStrategy = require('./services/passport-setup')
 const mongodb        = require('./config/Mongodb')
 const cookieSession  = require('cookie-session')
-const passport       =   require('passport')
+const passport       = require('passport')
 
 /*
  * @Set express static url path
