@@ -15,7 +15,7 @@ body {
 }
 .home-header .banner {
   height: calc(100vh - 80px);
-  border-left: 5px solid #2C73D2;
+  border-left: 5px solid #FF6F91;
 }
 .home-header .banner .banner-text h1 {
   font-size: 2.6rem;
@@ -36,24 +36,24 @@ body {
   transform: translateY(-5px);
 }
 .home-header .banner .banner-text .buttons a:first-of-type {
-  background-color: #2C73D2;
+  background-color: #FF6F91;
   color: #FFF;
 }
 .home-header .banner .banner-text .buttons a:last-of-type {
   background-color: #FFF;
-  color: #2C73D2;
+  color: #FF6F91;
 }
 
 .main-navbar {
   height: 80px;
-  background-image: linear-gradient(to right, #f96a8c, #f98f69);
   background-image: linear-gradient(to right, #845EC2, #2C73D2);
+  background-image: linear-gradient(to right, #f96a8c, #f98f69);
 }
 .main-navbar .navbar-brand {
   font-weight: 500;
   height: 80px;
   width: 120px;
-  background-color: #9373da;
+  background-color: #ff89a4;
 }
 .main-navbar .navbar-nav .nav-item {
   margin-left: 1rem;
@@ -91,6 +91,7 @@ body {
 .auth-section {
   height: 100vh;
   background-image: linear-gradient(to right, #845EC2, #2C73D2);
+  background-image: linear-gradient(to right, #f96a8c, #f98f69);
 }
 .auth-section form {
   width: 500px;
@@ -103,18 +104,18 @@ body {
   height: 60px;
   background-color: #FFF;
   z-index: 1000;
-  border-bottom: 1px solid #2C73D2;
+  border-bottom: 1px solid #FF6F91;
 }
 .auth-section form .other-buttons a {
   width: 90px;
-  color: #2C73D2;
+  color: #FF6F91;
   font-size: 1rem;
 }
 .auth-section form h3 {
   height: 70px;
   border-radius: 35px;
   font-size: 1.5rem;
-  background-color: #2C73D2;
+  background-color: #FF6F91;
   color: #FFF;
   padding-left: 1rem;
 }
@@ -127,7 +128,7 @@ body {
 .auth-section form .buttons button {
   height: 45px;
   width: 140px;
-  background-color: #2C73D2;
+  background-color: #FF6F91;
   color: #FFF;
   font-size: 1.2rem;
 }
