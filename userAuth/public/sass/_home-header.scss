@@ -1,0 +1,44 @@
+.home-header {
+    height: 100vh;
+
+    .banner {
+        height: calc(100vh - 80px);
+        border-left: 5px solid $color-main;
+
+        .banner-text {
+
+            h1 {
+                font-size: 2.6rem;
+                width: 60%;
+                font-weight: bolder;
+                line-height: 1.3;
+                font-family: $font-popp;
+                color: lighten($color-black, 30%);
+            }
+
+            .buttons {
+                a {
+                    width: 160px;
+                    height: 50px;
+                    font-size: 1.1rem;
+                    border-radius: 30px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    &:first-of-type {
+                        background-color: $color-main;
+                        color: $color-white;
+                    }
+
+                    &:last-of-type {
+                        background-color: $color-white;
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+    }
+}

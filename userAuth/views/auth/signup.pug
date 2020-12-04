@@ -3,5 +3,25 @@ block title
     title.text-capitalize signup
 block content
 
-    main
-        p signup
+    form(action="", method="post").position-relative.signup-form.d-flex.flex-column.justify-content-center.bg-white.shadow-sm
+        h3.d-flex.align-items-center.pb-0.m-0.text-capitalize.shadow-sm
+            span.icon.mr-3 <i class="lni lni-users"></i>
+            span create new account
+        
+        .form-group.mt-4
+            input(type="text", name="username", placeholder="enter your username").form-control.rounded-0
+        .form-group.mt-4
+            input(type="email", name="email", placeholder="someone@email.com").form-control.rounded-0
+        .form-group.mt-4
+            input(type="password", name="password", placeholder="***********").form-control.rounded-0
+        .form-group.mt-4
+            input(type="password", name="re_password", placeholder="repeat your password").form-control.rounded-0
+        
+        .buttons.d-flex.align-items-center.mt-4
+            button.btn.d-flex-align-items-center.justify-content-center.text-capitalize.rounded-0.shadow-sm
+                span.icon.mr-3 <i class="lni lni-users"></i>
+                span.p-0 signup
+        
+        .other-buttons.d-flex.align-items-center.position-absolute
+            a(href="/").d-flex.align-items-center.justify-content-center.text-decoration-none.text-capitalize <i class="lni lni-home"></i>
+            a(href="/login").border-left.d-flex.align-items-center.justify-content-center.text-decoration-none.text-capitalize login

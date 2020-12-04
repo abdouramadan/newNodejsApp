@@ -4,26 +4,11 @@ block title
 block content
 
     //- main header
-    header.main-header
-        nav.main-navbar.navbar.navbar-expand-lg.p-0.m-0
-            .container
-                a(href="").navbar-brand.text-uppercase.d-flex.align-items-center.justify-content-center fisal
-                ul.navbar-nav                                                                                                                                                                                                                         
-                    li.nav-item
-                        a.nav-link(href="").text-capitalize home
-                    li.nav-item
-                        a.nav-link(href="").text-capitalize about me
-                    li.nav-item
-                        a.nav-link(href="").text-capitalize portfolio
-                    li.nav-item
-                        a.nav-link(href="").text-capitalize blog
-                    li.nav-item
-                        a.nav-link(href="/google").text-capitalize login
-                    li.nav-item
-                        a.nav-link(href="/google").text-capitalize signup
-                    li.nav-item
-                        a.nav-link(href="/profile").text-capitalize profile
-                    li.nav-item
-                        a.nav-link(href="/logout").text-capitalize logout
-                    li.nav-item
-                        a.nav-link(href="").text-capitalize.d-flex.align-items-center.justify-content-center contact me
+    header.home-header
+        include ../includes/navbar.pug
+        .banner.d-flex.flex-column.justify-content-center.bg-light
+            .banner-text.container
+                h1.text-capitalize welcome to abdou <span>dev</span> wepblog signup to join our community
+                .buttons.d-flex.align-items-center.mt-4
+                    a(href="/signup").shadow-sm.d-flex.align-items-center.justify-content-center.text-decoration-none.text-capitalize signup
+                    a(href="/login").shadow-sm.d-flex.align-items-center.justify-content-center.text-decoration-none.text-capitalize.ml-3 login
